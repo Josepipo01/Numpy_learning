@@ -13,6 +13,9 @@ print(b)
 #help(np.add)
 
 #6. Create a null vector of size 10 but the fifth value which is 1 (★☆☆)
+c=np.zeros(10, dtype="uint8")
+c[4]=1
+print(c)
 
 #7. Create a vector with values ranging from 10 to 49 (★☆☆)
 d=np.arange(10,50, dtype="uint8")
@@ -28,3 +31,9 @@ print(new_d)
 #9. Create a 3x3 matrix with values ranging from 0 to 8 (★☆☆)
 f=np.random.randint(0,9,size=(3,3))
 print(f)
+
+#10. Find indices of non-zero elements from [1,2,0,0,4,0] (★☆☆)
+
+g=np.array([1,2,0,0,4,0], dtype="uint8")
+nonzero=np.nonzero(g!=0)
+print(nonzero)
